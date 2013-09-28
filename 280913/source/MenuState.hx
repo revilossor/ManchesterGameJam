@@ -10,6 +10,7 @@ import org.flixel.FlxSave;
 import org.flixel.FlxSprite;
 import org.flixel.FlxState;
 import org.flixel.FlxText;
+import org.flixel.system.input.FlxTouch;
 import org.flixel.util.FlxMath;
 
 class MenuState extends FlxState
@@ -20,12 +21,9 @@ class MenuState extends FlxState
 	override public function create():Void
 	{
 		// Set a background color
-		FlxG.bgColor = 0xffff00ff;
+		add(new FlxSprite(0, 0, Resourses.menu_bg));
 		// Show the mouse (in case it hasn't been disabled)
-		#if !FLX_NO_MOUSE
-		FlxG.mouse.show();
-		#end
-		
+		FlxG.mouse.hide();
 		super.create();
 	}
 	
@@ -37,6 +35,23 @@ class MenuState extends FlxState
 	{
 		super.destroy();
 	}
+	private function keyHandling():Void
+	{
+		if (FlxG.keys.pressed("SPACE")) {
+			trace("space pressed");
+			FlxG.fade(0xff000000, 1, false, startGame);
+		}
+		var touch = FlxG.touchManager.getFirstTouch();
+		if ( touch != null) {
+			FlxG.fade(0xff000000, 1, false, startGame);
+		}
+	}
+	private function startGame():Void
+	{
+		FlxG.switchState(new PlayState());
+	}
+	
+	
 
 	/**
 	 * Function that is called once every frame.
@@ -44,5 +59,6 @@ class MenuState extends FlxState
 	override public function update():Void
 	{
 		super.update();
+		keyHandling();
 	}	
 }

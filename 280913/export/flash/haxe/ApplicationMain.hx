@@ -13,7 +13,7 @@ class ApplicationMain {
 	public static function main() {
 		var call_real = true;
 		
-		//nme.Lib.setPackage("Zaphod", "jamGame", "com.example.myapp", "0.0.1");
+		//nme.Lib.setPackage("Zaphod", "Climbing", "com.example.myapp", "0.0.1");
 		
 		
 		var loaded:Int = flash.Lib.current.loaderInfo.bytesLoaded;

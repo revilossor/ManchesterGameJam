@@ -1,0 +1,19 @@
+-main ApplicationMain 
+-lib openfl
+-lib openfl-html5
+-lib flixel
+-lib openfl-html5
+-cp source
+-D tools=1
+-D openfl_ver=1.0.8
+-D openfl
+-D html5
+-D web
+-resource C:\Users\Admin\dev\mcrGameJam\ManchesterGameJam\280913\assets\data\courier.ttf.hash@NME_assets_data_courier_ttf
+-resource C:\Users\Admin\dev\mcrGameJam\ManchesterGameJam\280913\assets\data\nokiafc22.ttf.hash@NME_assets_data_nokiafc22_ttf
+-js export/html5/bin/Climbing.js
+-cp export/html5/haxe
+-D html5
+-D html
+--remap flash:flash
+-debug

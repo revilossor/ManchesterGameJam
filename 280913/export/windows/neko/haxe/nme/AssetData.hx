@@ -96,6 +96,8 @@ class AssetData {
 			type.set ("assets/data/vcr/stop.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/data/vis/bounds.png", "assets/data/vis/bounds.png");
 			type.set ("assets/data/vis/bounds.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/gfx/menu_bg.png", "assets/gfx/menu_bg.png");
+			type.set ("assets/gfx/menu_bg.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/HaxeFlixel.svg", "assets/HaxeFlixel.svg");
 			type.set ("assets/HaxeFlixel.svg", Reflect.field (AssetType, "text".toUpperCase ()));
 			

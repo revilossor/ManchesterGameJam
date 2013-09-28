@@ -90,6 +90,30 @@ class AssetData {
 			type.set ("assets/data/vcr/stop.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/data/vis/bounds.png", nme.NME_assets_data_vis_bounds_png);
 			type.set ("assets/data/vis/bounds.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/bg.png", nme.NME_assets_gfx_bg_png);
+			type.set ("assets/gfx/bg.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/crown.png", nme.NME_assets_gfx_crown_png);
+			type.set ("assets/gfx/crown.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/gover_bg.png", nme.NME_assets_gfx_gover_bg_png);
+			type.set ("assets/gfx/gover_bg.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/Green_ninja.png", nme.NME_assets_gfx_green_ninja_png);
+			type.set ("assets/gfx/Green_ninja.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/helmet.png", nme.NME_assets_gfx_helmet_png);
+			type.set ("assets/gfx/helmet.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/marblessheet_16x16.png", nme.NME_assets_gfx_marblessheet_16x16_png);
+			type.set ("assets/gfx/marblessheet_16x16.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/menu_bg.png", nme.NME_assets_gfx_menu_bg_png);
+			type.set ("assets/gfx/menu_bg.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/player.png", nme.NME_assets_gfx_player_png);
+			type.set ("assets/gfx/player.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/start_floor.png", nme.NME_assets_gfx_start_floor_png);
+			type.set ("assets/gfx/start_floor.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/wall.png", nme.NME_assets_gfx_wall_png);
+			type.set ("assets/gfx/wall.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/wall_brick.png", nme.NME_assets_gfx_wall_brick_png);
+			type.set ("assets/gfx/wall_brick.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/gfx/wall_right.png", nme.NME_assets_gfx_wall_right_png);
+			type.set ("assets/gfx/wall_right.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/HaxeFlixel.svg", nme.NME_assets_haxeflixel_svg);
 			type.set ("assets/HaxeFlixel.svg", Reflect.field (AssetType, "text".toUpperCase ()));
 			
@@ -140,4 +164,16 @@ class NME_assets_data_vcr_restart_png extends flash.display.BitmapData { public 
 class NME_assets_data_vcr_step_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_data_vcr_stop_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_data_vis_bounds_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_bg_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_crown_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_gover_bg_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_green_ninja_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_helmet_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_marblessheet_16x16_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_menu_bg_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_player_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_start_floor_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_wall_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_wall_brick_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_gfx_wall_right_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_haxeflixel_svg extends flash.utils.ByteArray { }

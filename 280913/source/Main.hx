@@ -34,7 +34,7 @@ class Main extends Sprite
 		
 		initialize();
 		
-		var demo:FlxGame = new ProjectClass();
+		var demo:FlxGame = new GameClas();
 		addChild(demo);
 		
 		#if (cpp || neko)

@@ -5,9 +5,10 @@
 -D tools=1
 -D openfl_ver=1.0.8
 -D openfl
+-D fdb
 -D web
 -swf-version 11
--swf export/flash/bin/jamGame.swf
--swf-header 800:600:30:FFFFFF
+-swf export/flash/bin/Climbing.swf
+-swf-header 960:1660:30:FFFFFF
 -cp export/flash/haxe
 #--remap nme:flash

@@ -31,7 +31,7 @@ class ApplicationMain
 	public static function main()
 	{
 		#if openfl
-		flash.Lib.setPackage("Zaphod", "jamGame", "com.example.myapp", "0.0.1");
+		flash.Lib.setPackage("Zaphod", "Climbing", "com.example.myapp", "0.0.1");
 		
 		#end
 		
@@ -39,10 +39,10 @@ class ApplicationMain
 		wx.App.boot(function()
 		{
 			
-			frame = wx.Frame.create(null, null, "jamGame", null, { width: 800, height: 600 });
+			frame = wx.Frame.create(null, null, "Climbing", null, { width: 960, height: 1660 });
 			
 			#if openfl
-			var stage = wx.NMEStage.create(frame, null, null, { width: 800, height: 600 });
+			var stage = wx.NMEStage.create(frame, null, null, { width: 960, height: 1660 });
 			#end
 
 			var hasMain = false;
@@ -87,7 +87,7 @@ class ApplicationMain
 		
 		flash.Lib.create(function()
 			{ 
-				//if ((800 == 0 && 600 == 0) || false)
+				//if ((960 == 0 && 1660 == 0) || false)
 				//{
 					flash.Lib.current.stage.align = flash.display.StageAlign.TOP_LEFT;
 					flash.Lib.current.stage.scaleMode = flash.display.StageScaleMode.NO_SCALE;
@@ -96,10 +96,10 @@ class ApplicationMain
 				
 				#if mobile
 				
-				if (800 != 0 && 600 != 0) {
+				if (960 != 0 && 1660 != 0) {
 					
-					forceWidth = 800;
-					forceHeight = 600;
+					forceWidth = 960;
+					forceHeight = 1660;
 					
 					container = new flash.display.Sprite();
 					barA = new flash.display.Sprite();
@@ -153,7 +153,7 @@ class ApplicationMain
 					#end
 				}
 			},
-			800, 600, 
+			960, 1660, 
 			30, 
 			16777215,
 			(true ? flash.Lib.HARDWARE : 0) |
@@ -167,7 +167,7 @@ class ApplicationMain
 			(false ? flash.Lib.FULLSCREEN : 0) |
 			(0 == 4 ? flash.Lib.HW_AA_HIRES : 0) |
 			(0 == 2 ? flash.Lib.HW_AA : 0),
-			"jamGame"
+			"Climbing"
 			
 			, null
 			
@@ -286,12 +286,12 @@ class ScaledStage extends flash.display.Stage {
 	
 	private override function get_stageHeight():Int 
    {
-      return 600;
+      return 1660;
    }
 	
    private override function get_stageWidth():Int 
    {
-      return 800;
+      return 960;
    }
 	
 }
